@@ -52,10 +52,11 @@ class Xlsx
           if v.nil?
             puts "empty"
             else
-            puts sheet.cell(row, col).to_s
+            print sheet.cell(row, col).to_s + ', '
             end
           end
         end
+        puts ''
       else
       puts 'Seems no data in sheet: ' + worksheet
       end
